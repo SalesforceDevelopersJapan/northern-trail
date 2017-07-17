@@ -12,7 +12,7 @@
             step: step,
             format: {
                 to: function (value ) {
-					return '$' + Math.round(value);
+					return '￥' + Math.round(value);
                 },
                 from: function ( value ) {
                     return value;
@@ -28,8 +28,8 @@
             var myEvent = $A.get("e.c:RangeChange");
         	myEvent.setParams({
         		"filterName": component.get("v.filterName"),
-            	"minValue": range[0].replace('$', ''),
-            	"maxValue": range[1].replace('$', '')
+            	"minValue": range[0].replace('￥', ''),
+            	"maxValue": range[1].replace('￥', '')
             });
 			myEvent.fire();
         }));

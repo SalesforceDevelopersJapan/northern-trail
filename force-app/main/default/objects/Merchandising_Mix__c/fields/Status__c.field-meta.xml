@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Status__c</fullName>
     <externalId>false</externalId>
-    <label>Status</label>
+    <label>ステータス</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -11,24 +11,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Draft</fullName>
+                <fullName>ドラフト</fullName>
                 <default>true</default>
-                <label>Draft</label>
+                <label>ドラフト</label>
             </value>
             <value>
-                <fullName>Submitted to Manufacturing</fullName>
+                <fullName>製造部門へ送信済み</fullName>
                 <default>false</default>
-                <label>Submitted to Manufacturing</label>
+                <label>製造部門へ送信済み</label>
             </value>
             <value>
-                <fullName>Approved by Manufacturing</fullName>
+                <fullName>製造部門から確認済み</fullName>
                 <default>false</default>
-                <label>Approved by Manufacturing</label>
+                <label>製造部門から確認済み</label>
             </value>
             <value>
-                <fullName>Ordered</fullName>
+                <fullName>注文成立済み</fullName>
                 <default>false</default>
-                <label>Ordered</label>
+                <label>注文成立済み</label>
             </value>
         </valueSetDefinition>
     </valueSet>

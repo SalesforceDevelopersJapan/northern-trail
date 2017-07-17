@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Season__c</fullName>
     <externalId>false</externalId>
-    <label>Season</label>
+    <label>シーズン</label>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -11,24 +11,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Winter 2018</fullName>
+                <fullName>2018年 冬</fullName>
                 <default>true</default>
-                <label>Winter 2018</label>
+                <label>2018年 冬</label>
             </value>
             <value>
-                <fullName>Spring 2018</fullName>
+                <fullName>2018年 春</fullName>
                 <default>false</default>
-                <label>Spring 2018</label>
+                <label>2018年 春</label>
             </value>
             <value>
-                <fullName>Summer 2018</fullName>
+                <fullName>2018年 夏</fullName>
                 <default>false</default>
-                <label>Summer 2018</label>
+                <label>2018年 夏</label>
             </value>
             <value>
-                <fullName>Fall 2018</fullName>
+                <fullName>2018年 秋</fullName>
                 <default>false</default>
-                <label>Fall 2018</label>
+                <label>2018年 秋</label>
             </value>
         </valueSetDefinition>
     </valueSet>

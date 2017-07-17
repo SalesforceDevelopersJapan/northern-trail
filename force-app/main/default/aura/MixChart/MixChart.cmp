@@ -1,16 +1,16 @@
 <aura:component implements="force:hasRecordId" access="global" >
-    
+
     <ltng:require scripts="{!$Resource.chartjs}"
                   afterScriptsLoaded="{!c.scriptsLoaded}" />
-    
+
     <aura:attribute name="mixItems" type="Mix_Item__c[]" default="[]"/>
-    
+
     <aura:handler name="change" value="{!v.mixItems}" action="{!c.mixItemsChangeHandler}"/>
-    
+
     <lightning:layout >
         <lightning:layoutItem >
             <div class="chart">
-                <canvas aura:id="chart" height="60" width="60"></canvas>
+                <canvas aura:id="chart" height="60" width="180"></canvas>
             </div>
         </lightning:layoutItem>
         <lightning:layoutItem class="slds-text-body_small">
@@ -19,7 +19,7 @@
                     <div class="legend womens"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem >
-                    Womens
+                    レディース
                 </lightning:layoutItem>
             </lightning:layout>
             <lightning:layout verticalAlign="center">
@@ -27,7 +27,7 @@
                     <div class="legend mens"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem >
-                    Mens
+                    メンズ
                 </lightning:layoutItem>
             </lightning:layout>
             <lightning:layout verticalAlign="center">
@@ -35,7 +35,7 @@
                     <div class="legend kids"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem >
-                    Kids
+                    キッズ
                 </lightning:layoutItem>
             </lightning:layout>
         </lightning:layoutItem>
@@ -45,7 +45,7 @@
                     <div class="legend gear"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem >
-                    Gear
+                    ギア
                 </lightning:layoutItem>
             </lightning:layout>
             <lightning:layout verticalAlign="center">
@@ -53,10 +53,10 @@
                     <div class="legend electronics"/>
                 </lightning:layoutItem>
                 <lightning:layoutItem >
-                    Electronics
+                    電気製品
                 </lightning:layoutItem>
             </lightning:layout>
         </lightning:layoutItem>
-    </lightning:layout>    
-    
+    </lightning:layout>
+
 </aura:component>

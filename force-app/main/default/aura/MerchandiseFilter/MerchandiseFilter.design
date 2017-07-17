@@ -1,5 +1,5 @@
-<design:component label="Merchandise Filter">
-    <design:attribute name="showSearch" label="Search" default="true"/>
-    <design:attribute name="showCategory" label="Category" default="true"/>
-    <design:attribute name="showSubcategory" label="Subcategory" default="true"/>
+<design:component label="商品フィルター">
+    <design:attribute name="showSearch" label="検索" default="true"/>
+    <design:attribute name="showCategory" label="カテゴリ" default="true"/>
+    <design:attribute name="showSubcategory" label="サブカテゴリ" default="true"/>
 </design:component>

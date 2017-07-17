@@ -1,3 +1,3 @@
-<design:component label="Merchandise Mix">
-    <design:attribute name="showChart" label="Mix Breakdown Chart" default="true"/>
+<design:component label="商品構成">
+    <design:attribute name="showChart" label="商品構成詳細チャートの表示" default="true"/>
 </design:component>

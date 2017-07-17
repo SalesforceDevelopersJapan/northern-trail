@@ -1,13 +1,13 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global" >
-    
+
     <aura:attribute name="showSearch" type="Boolean" default="true"/>
     <aura:attribute name="showCategory" type="Boolean" default="true"/>
     <aura:attribute name="showSubcategory" type="Boolean" default="true"/>
-    
+
     <aura:registerEvent name="filterChange" type="c:MerchandiseFilterChange"/>
-    
-    <div class="slds-text-heading_small">All Available Merchandise</div>
-    
+
+    <div class="slds-text-heading_small">全ての販売中商品</div>
+
     <lightning:layout class="slds-m-vertical_medium">
         <aura:if isTrue="{!v.showSearch}">
             <lightning:layoutitem flexibility="grow" class="right-padding">
@@ -25,5 +25,5 @@
             </lightning:layoutitem>
         </aura:if>
     </lightning:layout>
-    
+
 </aura:component>

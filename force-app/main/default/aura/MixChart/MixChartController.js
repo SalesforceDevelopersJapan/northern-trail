@@ -2,7 +2,7 @@
     scriptsLoaded : function(component) {
 
         var data = {
-            labels: ["Womens", "Mens", "Kids", "Gear", "Electronics"],
+            labels: ["レディース", "メンズ", "キッズ", "ギア", "電気製品"],
             datasets: [
                 {
                     data: [0, 0, 0, 0, 0, 1],
@@ -49,8 +49,22 @@
             var mixItems = component.get("v.mixItems");
             if (mixItems && Array.isArray(mixItems)) {
                 var map = {};
+                console.log("run");
                 mixItems.forEach(function(mixItem) {
-                    map[mixItem.Merchandise__r.Category__c] = (map[mixItem.Merchandise__r.Category__c] || 0) + (mixItem.Qty__c * mixItem.Merchandise__r.Price__c);
+                  var tmpcategory = "undefined";
+                  if(mixItem.Merchandise__r.Category__c == "レディース"){
+                    tmpcategory = "Womens";
+                  }else if(mixItem.Merchandise__r.Category__c == "メンズ"){
+                    tmpcategory = "Mens";
+                  }else if(mixItem.Merchandise__r.Category__c == "キッズ"){
+                    tmpcategory = "Kids";
+                  }else if(mixItem.Merchandise__r.Category__c == "ギア"){
+                    tmpcategory = "Gear";
+                  }else if(mixItem.Merchandise__r.Category__c == "電気製品"){
+                    tmpcategory = "Electronics";
+                  }
+                  console.log(tmpcategory);
+                  map[tmpcategory] = (map[tmpcategory] || 0) + (mixItem.Qty__c * mixItem.Merchandise__r.Price__c);
                 });
                 var data = [
                     map.Womens || 0,

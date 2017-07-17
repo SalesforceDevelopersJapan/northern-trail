@@ -157,13 +157,13 @@
                 <leftValueReference>myVariable_current.Status__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Submitted to Manufacturing</stringValue>
+                    <stringValue>製造部門へ送信済み</stringValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>Submitted?</label>
+            <label>商品構成送信済み?</label>
         </rules>
     </decisions>
     <decisions>
@@ -240,17 +240,17 @@
                 <leftValueReference>myVariable_current.Status__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <stringValue>Draft</stringValue>
+                    <stringValue>ドラフト</stringValue>
                 </rightValue>
             </conditions>
             <connector>
                 <targetReference>myRule_4_A1</targetReference>
             </connector>
-            <label>Unsubmitted?</label>
+            <label>商品構成取り消し済み?</label>
         </rules>
     </decisions>
-    <interviewLabel>Mix_Status_Change-3_InterviewLabel</interviewLabel>
-    <label>Mix Status Change</label>
+    <interviewLabel>Mix_Status_Change-4_InterviewLabel</interviewLabel>
+    <label>商品構成ステータス変更</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
@@ -278,7 +278,7 @@
     <processType>Workflow</processType>
     <recordCreates>
         <name>myRule_1_A1</name>
-        <label>Publish Mix Submitted Platform Event</label>
+        <label>商品構成送信プラットフォームイベント</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <inputAssignments>
@@ -375,7 +375,7 @@
     </recordCreates>
     <recordCreates>
         <name>myRule_4_A1</name>
-        <label>Publish Mix Unsubmitted Platform Event</label>
+        <label>商品構成取り消しプラットフォームイベント</label>
         <locationX>400</locationX>
         <locationY>200</locationY>
         <inputAssignments>

@@ -2,9 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Merchandise__c</fullName>
     <externalId>false</externalId>
-    <label>Merchandise</label>
+    <label>商品</label>
     <referenceTo>Merchandise__c</referenceTo>
-    <relationshipLabel>Mix Items</relationshipLabel>
+    <relationshipLabel>商品構成アイテム</relationshipLabel>
     <relationshipName>Mix_Items</relationshipName>
     <relationshipOrder>1</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>

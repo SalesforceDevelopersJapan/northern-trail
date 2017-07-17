@@ -56,12 +56,12 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Merchandise</label>
+    <label>商品</label>
     <nameField>
-        <label>Merchandise Name</label>
+        <label>商品名</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Merchandise</pluralLabel>
+    <pluralLabel>商品</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

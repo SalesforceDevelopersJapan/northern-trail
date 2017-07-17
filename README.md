@@ -1,3 +1,32 @@
-## Northern Trail Outfitters Sample App
+## ノーザントレイルアウトフィッターズ サンプルアプリケーション
 
-Read [this blog post](https://developer.salesforce.com/blogs/developer-relations/2017/07/northern-trail-outfitters-new-sample-application-lightning-components-platform-events-salesforce-dx.html) for details and installation instructions.
+[オリジナルのリポジトリ](https://github.com/ccoenraets/northern-trail)の日本語版になります。
+
+### 利用方法
+
+以下の手順でデプロイが可能です
+
+1. SFDX CLIでDevHub組織へログイン
+```
+sfdx force:org:web:login -d
+```
+1. Scrach Orgの作成
+```
+sfdx force:org:create -s -f config/project-scratch-def.json -a devorg1
+```
+1. ソースコードのPush
+```
+  sfdx force:source:push
+```
+1. 権限セットのアサイン
+```
+  sfdx force:user:permset:assign -n NTO
+```
+1. データのインポート
+```
+  sfdx force:data:tree:import -p data/sample-data-Merchandise__c-plan.json
+```  
+1. Webブラウザを表示して確認
+```
+sfdx force:org:open
+```

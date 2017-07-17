@@ -36,7 +36,7 @@
         var minValue = event.getParam("minValue");
         var maxValue = event.getParam("maxValue");
         var filterObject = component.get("v.filterObject");
-        if (filterName === 'MSRP') {
+        if (filterName === '希望小売価格') {
 	        filterObject.minPrice = minValue;
 	        filterObject.maxPrice = maxValue;
         }

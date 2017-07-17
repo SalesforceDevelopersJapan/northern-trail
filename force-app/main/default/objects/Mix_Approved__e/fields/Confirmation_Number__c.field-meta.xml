@@ -5,7 +5,7 @@
     <isFilteringDisabled>false</isFilteringDisabled>
     <isNameField>false</isNameField>
     <isSortingDisabled>false</isSortingDisabled>
-    <label>Confirmation Number</label>
+    <label>確認番号</label>
     <length>20</length>
     <required>false</required>
     <type>Text</type>

@@ -15,7 +15,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>pathName</name>
-                <value>Merchandising Mix</value>
+                <value>商品構成</value>
             </componentInstanceProperties>
             <componentName>MixPath</componentName>
         </componentInstances>
@@ -57,7 +57,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>filterName</name>
-                <value>MSRP</value>
+                <value>希望小売価格</value>
             </componentInstanceProperties>
             <componentName>Range</componentName>
         </componentInstances>

@@ -4,12 +4,12 @@
     <aura:attribute name="currentStep" type="String" />
     <aura:attribute name="stepIndex" type="Integer" />
     <aura:attribute name="extraStep" type="String" />
-    
+
     <aura:handler name="change" value="{!v.steps}" action="{!c.calculateStepIndex}"/>
     <aura:handler name="change" value="{!v.currentStep}" action="{!c.calculateStepIndex}"/>
-    
+
     <aura:registerEvent name="stepChange" type="c:PathStepChange"/>
-    
+
 	<div class="slds-grid">
 		<div class="slds-tabs--path" role="application">
 			<ul class="slds-tabs--path__nav" role="tablist">
@@ -18,14 +18,14 @@
                         <a class="slds-tabs--path__link" data-step="{!step}" onclick="{!c.onStepClicked}">
                           <span class="slds-tabs--path__stage">
                               <lightning:icon iconName="utility:check" size="x-small" class="process-icon"/>
-                            <span class="slds-assistive-text">Stage Complete</span>
+                            <span class="slds-assistive-text">ステージ完了</span>
                           </span>
                           <span class="slds-tabs--path__title">{!step}</span>
                         </a>
                     </li>
-                </aura:iteration>                    
+                </aura:iteration>
             </ul>
         </div>
     </div>
-    
+
 </aura:component>

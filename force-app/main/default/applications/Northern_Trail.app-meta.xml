@@ -5,9 +5,9 @@
         <logo>nto_logo</logo>
         <logoVersion>1</logoVersion>
     </brand>
-    <description>Connecting to our customers in a whole new way</description>
+    <description>新しいカタチで顧客とつながる</description>
     <formFactors>Large</formFactors>
-    <label>Northern Trail</label>
+    <label>ノーザントレイル</label>
     <navType>Standard</navType>
     <tab>standard-home</tab>
     <tab>standard-Account</tab>

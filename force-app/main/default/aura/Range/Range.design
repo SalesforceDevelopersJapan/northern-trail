@@ -1,3 +1,3 @@
-<design:component >
-    <design:attribute name="filterName" datasource="MSRP" label="Filter" default="MSRP"/>
+<design:component label="価格レンジバー">
+    <design:attribute name="filterName" datasource="希望小売価格" label="Filter" default="希望小売価格"/>
 </design:component>
