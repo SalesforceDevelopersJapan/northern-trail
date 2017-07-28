@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>postTargetUserType</name>
+            <value>
+                <stringValue>REFERENCE</stringValue>
+            </value>
+        </processMetadataValues>
+        <processMetadataValues>
+            <name>textJson</name>
+            <value>
+                <stringValue>{&quot;mentions&quot;:[],&quot;message&quot;:&quot;販売セット構成が取り消されました。取引先との状況を確認してください。&quot;}</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_4_A2</name>
+        <label>取引先担当へ通知</label>
+        <locationX>400</locationX>
+        <locationY>300</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>販売セット構成が取り消されました。取引先との状況を確認してください。</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>USER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>myVariable_current.Account__r.Owner.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <assignments>
         <name>myVariable_waitStartTimeAssignment</name>
         <label>myVariable_waitStartTimeAssignment</label>
@@ -163,7 +201,7 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>商品構成送信済み?</label>
+            <label>販売セット構成送信済み?</label>
         </rules>
     </decisions>
     <decisions>
@@ -246,11 +284,12 @@
             <connector>
                 <targetReference>myRule_4_A1</targetReference>
             </connector>
-            <label>商品構成取り消し済み?</label>
+            <label>販売セット構成取り消し済み?</label>
         </rules>
     </decisions>
-    <interviewLabel>Mix_Status_Change-4_InterviewLabel</interviewLabel>
-    <label>商品構成ステータス変更</label>
+    <description>販売セット構成のステータスが変更された際に、プラットフォームイベントの送出など各種処理を行います。</description>
+    <interviewLabel>Mix_Status_Change-2_InterviewLabel</interviewLabel>
+    <label>販売セット構成ステータス変更</label>
     <processMetadataValues>
         <name>ObjectType</name>
         <value>
@@ -278,7 +317,7 @@
     <processType>Workflow</processType>
     <recordCreates>
         <name>myRule_1_A1</name>
-        <label>商品構成送信プラットフォームイベント</label>
+        <label>送信イベント処理</label>
         <locationX>100</locationX>
         <locationY>200</locationY>
         <inputAssignments>
@@ -375,9 +414,12 @@
     </recordCreates>
     <recordCreates>
         <name>myRule_4_A1</name>
-        <label>商品構成取り消しプラットフォームイベント</label>
+        <label>取消イベント処理</label>
         <locationX>400</locationX>
         <locationY>200</locationY>
+        <connector>
+            <targetReference>myRule_4_A2</targetReference>
+        </connector>
         <inputAssignments>
             <processMetadataValues>
                 <name>dataType</name>

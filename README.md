@@ -24,7 +24,7 @@ sfdx force:org:create -s -f config/project-scratch-def.json -a devorg1
 ```
 1. データのインポート
 ```
-  sfdx force:data:tree:import -p data/sample-data-Merchandise__c-plan.json
+  sfdx force:data:tree:import -p data/sample-data-plan.json
 ```  
 1. Webブラウザを表示して確認
 ```

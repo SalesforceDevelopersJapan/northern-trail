@@ -1,0 +1,34 @@
+[
+  {
+    "sobject": "Account",
+    "saveRefs": true,
+    "resolveRefs": false,
+    "files": [
+      "sample-data-Account.json"
+    ]
+  },
+  {
+    "sobject": "Merchandise__c",
+    "saveRefs": true,
+    "resolveRefs": false,
+    "files": [
+      "sample-data-Merchandise__c.json"
+    ]
+  },
+  {
+    "sobject": "Merchandising_Mix__c",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "sample-data-Merchandising_Mix__c.json"
+    ]
+  },
+  {
+    "sobject": "Mix_Item__c",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "sample-data-Mix_Item__c.json"
+    ]
+  }
+]

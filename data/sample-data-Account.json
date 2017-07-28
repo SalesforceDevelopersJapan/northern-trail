@@ -1,0 +1,36 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "アクティススポーツ販売東京店",
+            "Description": "東京にある店舗"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "アクティススポーツ販売大阪店",
+            "Description": "大阪にある店舗"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "株式会社プロキャンプ",
+            "Description": "株式会社プロキャンプ"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef4"
+            },
+            "Name": "株式会社サイバートレイル",
+            "Description": "株式会社サイバートレイル"
+        }
+    ]
+}

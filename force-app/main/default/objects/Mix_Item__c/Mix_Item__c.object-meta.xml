@@ -52,13 +52,13 @@
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>商品構成アイテム</label>
+    <label>販売セット構成アイテム</label>
     <nameField>
         <displayFormat>MI-{0000000}</displayFormat>
-        <label>商品構成アイテム名</label>
+        <label>販売セット構成アイテム名</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>商品構成アイテム</pluralLabel>
+    <pluralLabel>販売セット構成アイテム</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

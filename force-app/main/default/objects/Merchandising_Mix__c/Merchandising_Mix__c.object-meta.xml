@@ -56,12 +56,12 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>商品構成</label>
+    <label>販売セット構成</label>
     <nameField>
-        <label>商品構成名</label>
+        <label>販売セット構成名</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>商品構成</pluralLabel>
+    <pluralLabel>販売セット構成</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

@@ -1,0 +1,24 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Merchandising_Mix__c",
+                "referenceId": "Merchandising_Mix__cRef1"
+            },
+            "Name": "アクティススポーツ販売東京店向け販売セット構成",
+            "Season__c": "2018年 冬",
+            "Status__c": "ドラフト",
+            "Account__c":"@AccountRef1"
+        },
+        {
+            "attributes": {
+                "type": "Merchandising_Mix__c",
+                "referenceId": "Merchandising_Mix__cRef2"
+            },
+            "Name": "株式会社プロキャンプ向け販売セット構成",
+            "Season__c": "2018年 冬",
+            "Status__c": "ドラフト",
+            "Account__c":"@AccountRef3"
+        }
+    ]
+}

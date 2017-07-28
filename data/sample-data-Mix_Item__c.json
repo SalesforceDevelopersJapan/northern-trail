@@ -1,0 +1,49 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Mix_Item__c",
+                "referenceId": "Mix_Item__cRef1"
+            },
+            "Merchandise__c":"@Merchandise__cRef3",
+            "Merchandising_mix__c":"@Merchandising_Mix__cRef1",
+            "Qty__c": 20
+        },
+        {
+            "attributes": {
+                "type": "Mix_Item__c",
+                "referenceId": "Mix_Item__cRef2"
+            },
+            "Merchandise__c":"@Merchandise__cRef9",
+            "Merchandising_mix__c":"@Merchandising_Mix__cRef1",
+            "Qty__c": 10
+        },
+        {
+            "attributes": {
+                "type": "Mix_Item__c",
+                "referenceId": "Mix_Item__cRef3"
+            },
+            "Merchandise__c":"@Merchandise__cRef5",
+            "Merchandising_mix__c":"@Merchandising_Mix__cRef1",
+            "Qty__c": 10
+        },
+        {
+            "attributes": {
+                "type": "Mix_Item__c",
+                "referenceId": "Mix_Item__cRef4"
+            },
+            "Merchandise__c":"@Merchandise__cRef10",
+            "Merchandising_mix__c":"@Merchandising_Mix__cRef1",
+            "Qty__c": 10
+        },
+        {
+            "attributes": {
+                "type": "Mix_Item__c",
+                "referenceId": "Mix_Item__cRef5"
+            },
+            "Merchandise__c":"@Merchandise__cRef1",
+            "Merchandising_mix__c":"@Merchandising_Mix__cRef1",
+            "Qty__c": 10
+        }
+    ]
+}
