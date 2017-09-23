@@ -8,7 +8,7 @@
 
 1. SFDX CLIでDevHub組織へログイン
 ```
-sfdx force:org:web:login -d
+sfdx force:auth:web:login -d
 ```
 1. Scrach Orgの作成
 ```
