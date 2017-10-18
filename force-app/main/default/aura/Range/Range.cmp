@@ -1,22 +1,13 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global" >
 
-    <ltng:require styles="{!$Resource.nouislider + '/nouislider.css'}"
-                  scripts="{!$Resource.nouislider + '/nouislider.js'}"
-                  afterScriptsLoaded="{!c.jsLoaded}" />
-
     <aura:registerEvent name="onchange" type="c:RangeChange"/>
 
-    <aura:attribute name="label" type="String" default="価格範囲:"/>
-    <aura:attribute name="filterName" type="String"/>
+    <aura:attribute name="filterName" type="String" default=""  access="global"/>
     <aura:attribute name="min" type="String" default="0"/>
     <aura:attribute name="max" type="String" default="100000"/>
     <aura:attribute name="step" type="String" default="1000"/>
 
-    <lightning:layout >
-        <lightning:layoutItem >{!v.field} 範囲:</lightning:layoutItem>
-		<lightning:layoutItem >
-	    		<div aura:id="slider" class="slider"/>
-        </lightning:layoutItem>
-    </lightning:layout>
+    <lightning:slider step="1000" value="{!v.min}" min="0" max="100000" onchange="{!c.handleMinChange}"/>
+    <lightning:slider step="1000" value="{!v.max}" min="0" max="100000" onchange="{!c.handleMaxChange}"/>
 
 </aura:component>

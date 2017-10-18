@@ -9,6 +9,7 @@
             "pageNumber": page || 1
 		});
     		action.setCallback(this, function(response) {
+            console.log(JSON.stringify(component.get("v.filterObject")));
             console.log('# getProducts callback %f', (performance.now() - startTime));
 			var result = response.getReturnValue();
             component.set("v.items", result.items);

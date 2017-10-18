@@ -1,6 +1,7 @@
 {
-    "orgName": "ノーザントレイルジャパン株式会社",
+    "orgName": "NTOJapan",
     "edition": "Developer",
+    "hasSampleData": "false",
     "orgPreferences" : {
         "enabled": ["S1DesktopEnabled"]
     }

@@ -10,9 +10,14 @@
 ```
 sfdx force:auth:web:login -d
 ```
-1. Scrach Orgの作成
+1. northern-trailリポジトリのクローン:
+    ```
+    git clone https://github.com/mokamoto/northern-trail
+    cd northern-trail
+    ```
+1. エイリアス(nto)をつけたScrach Orgの作成
 ```
-sfdx force:org:create -s -f config/project-scratch-def.json -a devorg1
+sfdx force:org:create -s -f config/project-scratch-def.json -a nto
 ```
 1. ソースコードのPush
 ```
@@ -30,3 +35,14 @@ sfdx force:org:create -s -f config/project-scratch-def.json -a devorg1
 ```
 sfdx force:org:open
 ```
+1. **販売セット構成** タブをクリックし, 販売セット構成をクリックします
+
+1. 商品を右のサイドバーから販売セット構成にドラッグ & ドロップします
+
+1. Pathコンポーネントの **製造部門へ送信済み** をクリックします
+
+[ノーザントレイル製造](https://github.com/mokamoto/northern-trail-manufacturing)　サンプルアプリをインスツトールする事で、Platform Eventベースのインテグレーションを確認できます。
+
+SFDX を使ってデプロイしたい場合は以下のコマンドを使用します:
+
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/deploy?template=https://github.com/mokamoto/northern-trail)

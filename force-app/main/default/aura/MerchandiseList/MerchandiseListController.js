@@ -28,17 +28,11 @@
         if (event.getParam("category") !== undefined) {
 	        filterObject.category = event.getParam("category");
         }
-        helper.loadMerchandise(component);
-    },
-
-    rangeChange: function(component, event, helper) {
-        var filterName = event.getParam("filterName");
-        var minValue = event.getParam("minValue");
-        var maxValue = event.getParam("maxValue");
-        var filterObject = component.get("v.filterObject");
-        if (filterName === '希望小売価格') {
-	        filterObject.minPrice = minValue;
-	        filterObject.maxPrice = maxValue;
+        if (event.getParam("minPrice") !== undefined) {
+	        filterObject.minPrice = event.getParam("minPrice");;
+        }
+        if (event.getParam("maxPrice") !== undefined) {
+	        filterObject.maxPrice = event.getParam("maxPrice");;
         }
         helper.loadMerchandise(component);
     }

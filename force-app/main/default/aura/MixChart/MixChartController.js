@@ -52,19 +52,19 @@
                 console.log("run");
                 mixItems.forEach(function(mixItem) {
                   var tmpcategory = "undefined";
-                  if(mixItem.Merchandise__r.Category__c == "レディース"){
+                  if(mixItem.category == "レディース"){
                     tmpcategory = "Womens";
-                  }else if(mixItem.Merchandise__r.Category__c == "メンズ"){
+                  }else if(mixItem.category == "メンズ"){
                     tmpcategory = "Mens";
-                  }else if(mixItem.Merchandise__r.Category__c == "キッズ"){
+                  }else if(mixItem.category == "キッズ"){
                     tmpcategory = "Kids";
-                  }else if(mixItem.Merchandise__r.Category__c == "ギア"){
+                  }else if(mixItem.category == "ギア"){
                     tmpcategory = "Gear";
-                  }else if(mixItem.Merchandise__r.Category__c == "電気製品"){
+                  }else if(mixItem.category == "電気製品"){
                     tmpcategory = "Electronics";
                   }
                   console.log(tmpcategory);
-                  map[tmpcategory] = (map[tmpcategory] || 0) + (mixItem.Qty__c * mixItem.Merchandise__r.Price__c);
+                  map[tmpcategory] = (map[tmpcategory] || 0) + (mixItem.qty * mixItem.price);
                 });
                 var data = [
                     map.Womens || 0,
